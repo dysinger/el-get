@@ -1,0 +1,8 @@
+(:name ghc-mod
+       :post-init
+       (progn
+         (autoload 'ghc-init "ghc" nil t)
+         (defun el-get-ghc-mod-hook ()
+           (ghc-init)
+           (flymake-mode))
+         (add-hook 'haskell-mode-hook 'el-get-ghc-mod-hook)))
