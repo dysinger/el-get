@@ -3,4 +3,5 @@
        :type github
        :pkgname "chrisdone/structured-haskell-mode"
        :features shm
-       :load-path "elisp")
+       :load-path "elisp"
+       :post-init (add-hook 'haskell-mode-hook 'structured-haskell-mode))
