@@ -1,0 +1,6 @@
+(:name structured-haskell-mode
+       :depends haskell-mode
+       :type github
+       :pkgname "chrisdone/structured-haskell-mode"
+       :features shm
+       :load-path "elisp")
