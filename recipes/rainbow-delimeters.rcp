@@ -1,0 +1,14 @@
+(:name rainbow-delimiters
+       :post-init
+       (progn
+         (defun el-get-rainbow-delimeters-hook ()
+           (show-paren-mode t)
+           (rainbow-delimiters-mode t))
+         (dolist (mode '(clojure-mode-hook
+                         emacs-lisp-mode-hook
+                         eval-expression-minibuffer-setup-hook
+                         ielm-mode-hook
+                         lisp-mode-hook
+                         lisp-interaction-mode-hook
+                         scheme-mode-hook))
+           (add-hook mode 'el-get-rainbow-delimeters-hook))))
