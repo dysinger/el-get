@@ -1,2 +1,3 @@
 (:name auto-complete
-       :features (auto-complete auto-complete-config))
+       :features (auto-complete auto-complete-config)
+       :post-init (ac-config-default))
