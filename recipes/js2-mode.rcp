@@ -1,0 +1,6 @@
+(:name js2-mode
+       :post-init
+       (progn
+         (setq auto-mode-alist (cons '("\\.json$" . js2-mode) auto-mode-alist))
+         (setq auto-mode-alist (cons '("\\.template$" . js2-mode) auto-mode-alist))
+         (setq js2-basic-offset 4)))
