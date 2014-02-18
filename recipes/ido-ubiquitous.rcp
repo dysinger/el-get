@@ -1,0 +1,6 @@
+(:name ido-ubiquitous
+       :features ido-ubiquitous
+       :post-init
+       (progn
+         (ido-mode)
+         (ido-ubiquitous-mode)))
