@@ -1,0 +1,11 @@
+(:name whitespace
+       :post-init
+       (progn
+         (setq-default
+          column-number-mode t
+          indent-tabs-mode nil
+          indicate-empty-lines t
+          tab-width 4
+          truncate-lines t
+          whitespace-action '(auto-cleanup)
+          whitespace-style '(empty indentation tabs trailing))))
