@@ -1,0 +1,2 @@
+(:name auto-complete
+       :features (auto-complete auto-complete-config))
