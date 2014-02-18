@@ -1,0 +1,15 @@
+(:name paredit
+       :post-init
+       (progn
+         (defun el-get-paredit-hook ()
+           (paredit-mode t)
+           (local-set-key (kbd "C-c (") 'paredit-backward-slurp-sexp)
+           (local-set-key (kbd "C-c )") 'paredit-forward-slurp-sexp))
+         (dolist (mode '(clojure-mode-hook
+                         emacs-lisp-mode-hook
+                         eval-expression-minibuffer-setup-hook
+                         ielm-mode-hook
+                         lisp-mode-hook
+                         lisp-interaction-mode-hook
+                         scheme-mode-hook))
+           (add-hook mode 'el-get-paredit-hook))))
