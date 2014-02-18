@@ -1,0 +1,10 @@
+(:name deft
+       :depends org-mode
+       :post-init
+       (progn
+         (setq deft-directory org-directory
+               deft-extension "org"
+               deft-text-mode 'org-mode
+               deft-use-filename-as-title t)
+         (global-set-key (kbd "C-x d") 'deft)
+         (global-set-key (kbd "C-x n") 'deft-new-file)))
