@@ -1,0 +1,6 @@
+(:name org-mode
+       :branch "release_7.9.4"
+       :post-init
+       (progn
+         (global-set-key "\C-cc" 'org-capture)
+         (global-set-key "\C-ca" 'org-agenda)))
