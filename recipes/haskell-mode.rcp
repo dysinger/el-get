@@ -6,8 +6,7 @@
          (require 'haskell-mode-autoloads)
          (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
          (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
-         (setq haskell-stylish-on-save t
-               haskell-process-type 'cabal-repl
+         (setq haskell-process-type 'cabal-repl
                haskell-process-args-cabal-repl '("--ghc-option=-ferror-spans"
                                                  "--with-ghc=ghci-ng"))
          (define-key haskell-mode-map (kbd "C-x C-d") nil)
