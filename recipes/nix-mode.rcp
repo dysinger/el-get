@@ -1,0 +1,5 @@
+(:name nix-mode
+       :description "Emacs mode for NixOS/Nix"
+       :type http
+       :url "https://raw.github.com/NixOS/nix/master/misc/emacs/nix-mode.el"
+       :features nix-mode)
