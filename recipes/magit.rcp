@@ -1,5 +1,4 @@
 (:name magit
        :post-init
        (progn
-	 (global-set-key (kbd "C-x g") 'magit-status)
-	 (add-hook 'magit-mode-hook 'turn-on-magit-topgit)))
+         (global-set-key (kbd "C-x g") 'magit-status)))
